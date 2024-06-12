@@ -49,7 +49,8 @@
       left: 15px;
     }
 
-    .field-select {
+    .field-select,
+    .field-input {
       padding-left: 47px;
     }
   }
@@ -69,13 +70,16 @@
 
     &-select {
       border: 1px solid #e1ddf4;
-      padding: 16px 20px;
       border-radius: 8px;
       color: #0b0d23;
       font-size: 16px;
       font-weight: 400;
       line-height: 23.2px;
       width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 20px;
+      padding-right: 40px;
     }
 
     &-input,

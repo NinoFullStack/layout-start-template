@@ -155,12 +155,194 @@
                   </select>
                 </div>
               </label>
+
+              <div class="form-row">
+                <div class="multiselect" id="user-interests">
+                  <span class="multiselect-label">Интересы пользователей:</span>
+
+                  <div class="multiselect-list" id="multiselect-list">
+                    <button class="multiselect-item" data-item>
+                      Технологии
+                    </button>
+                    <button class="multiselect-item" data-item>Игры</button>
+                    <button class="multiselect-item" data-item>Спорт</button>
+                    <button class="multiselect-item" data-item>Еда</button>
+                    <button class="multiselect-item" data-item>Мода</button>
+                    <button class="multiselect-item" data-item>Финансы</button>
+                    <button class="multiselect-item" data-item>
+                      Искусство
+                    </button>
+                    <button class="multiselect-item" data-item>Здоровье</button>
+                    <button class="multiselect-item" data-item>Музыка</button>
+
+                    <button class="multiselect-add">
+                      <img src="./images/plus-icon-blue.svg" alt="plus icon" />
+                      Добавить
+                    </button>
+                  </div>
+                </div>
+                <div class="multiselect" id="user-countries">
+                  <span class="multiselect-label">Страны пользователей:</span>
+
+                  <div class="multiselect-list" id="multiselect-list">
+                    <button class="multiselect-item" data-item>
+                      <img src="./images/ua-flag.svg" alt="ua flag" />
+                      Украина
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      <img src="./images/de-flag.svg" alt="de flag" />
+                      Германия
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      <img src="./images/it-flag.svg" alt="it flag" />
+                      Италия
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      <img src="./images/es-flag.svg" alt="es flag" />
+                      Испания
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      <img src="./images/fr-flag.svg" alt="fr flag" />
+                      Франция
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      <img src="./images/pl-flag.svg" alt="pl flag" />
+                      Польша
+                    </button>
+
+                    <button class="multiselect-add">
+                      <img src="./images/plus-icon-blue.svg" alt="plus icon" />
+                      Добавить
+                    </button>
+                  </div>
+                </div>
+                <div class="multiselect" id="main-audience">
+                  <span class="multiselect-label">Основная аудитория:</span>
+
+                  <div class="multiselect-list" id="multiselect-list">
+                    <button class="multiselect-item" data-item>
+                      Мужчины 25-35
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      Женщины 25-35
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      Парни 20-25
+                    </button>
+                    <button class="multiselect-item" data-item>
+                      Девушки 20-25
+                    </button>
+                    <button class="multiselect-item" data-item>Дети</button>
+
+                    <button class="multiselect-add">
+                      <img src="./images/plus-icon-blue.svg" alt="plus icon" />
+                      Добавить
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="form-part form-part--three">
+            <div class="container">
+              <label for="confirmationPeriod" class="form-field">
+                <span class="form-label">Срок подтверждения Вами:</span>
+                <div class="form-field--select form-field--icon">
+                  <img
+                    class="field-icon"
+                    src="./images/subscribers-icon.svg"
+                    alt="subscribers icon"
+                  />
+                  <select
+                    name="confirmationPeriod"
+                    id="confirmationPeriod"
+                    class="field-select"
+                  >
+                    <option value="24">В течение 24 часов</option>
+                    <option value="32">В течение 32 часов</option>
+                    <option value="52">В течение 52 часов</option>
+                    <option value="130">В течение 130 часов</option>
+                  </select>
+                </div>
+              </label>
+              <label for="deadlineCompletion" class="form-field">
+                <span class="form-label">Крайний срок выполнения:</span>
+                <div class="form-field--select form-field--icon">
+                  <img
+                    class="field-icon"
+                    src="./images/calendar-icon.svg"
+                    alt="calendar icon"
+                  />
+                  <select
+                    name="deadlineCompletion"
+                    id="deadlineCompletion"
+                    class="field-select"
+                  >
+                    <option value="26 февраля 2024 (14 дней)">
+                      26 февраля 2024 (14 дней)
+                    </option>
+                    <option value="30 февраля 2024 (17 дней)">
+                      30 февраля 2024 (17 дней)
+                    </option>
+                    <option value="33 февраля 2024 (22 дней)">
+                      33 февраля 2024 (22 дней)
+                    </option>
+                  </select>
+                </div>
+                <div class="field-btns">
+                  <button class="btn btn-white">+1 день</button>
+                  <button class="btn btn-white">+3 день</button>
+                  <button class="btn btn-white">+7 день</button>
+                </div>
+              </label>
+              <label for="budget" class="form-field">
+                <span class="form-label">Бюджет:</span>
+                <div class="field-row">
+                  <div class="form-field--icon">
+                    <img
+                      class="field-icon"
+                      src="./images/balance-icon.svg"
+                      alt="balance icon"
+                    />
+                    <input
+                      type="text"
+                      id="budget"
+                      class="field-input"
+                      value="$500.00"
+                    />
+                  </div>
+                  <div class="form-field--select">
+                    <select name="currency" id="currency" class="field-select">
+                      <option value="USD">USD</option>
+                      <option value="EURO">EURO</option>
+                    </select>
+                  </div>
+                  <div class="field-btns">
+                    <button class="btn btn-white">+$5</button>
+                    <button class="btn btn-white">+$10</button>
+                    <button class="btn btn-white">+$25</button>
+                    <button class="btn btn-white">+$50</button>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-part form-part--four container">
+            <button class="btn">
+              <img src="./images/plus-icon.svg" alt="plus icon" />
+              Опубликовать заказ
+            </button>
+            <button class="btn btn-white">
+              <img src="./images/bookmark-icon.svg" alt="bookmark icon" />
+              Сохранить шаблон
+            </button>
           </div>
         </form>
       </section>
     </main>
 
-    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
   </body>
 </html>

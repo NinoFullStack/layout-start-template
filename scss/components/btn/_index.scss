@@ -1,0 +1,20 @@
+.btn {
+  padding: 14px 20px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  gap: 0 8px;
+  border-radius: 8px;
+  background-color: #5137e0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23.2px;
+  color: #ffffff;
+  cursor: pointer;
+
+  &.btn-white {
+    border: 1px solid #e1ddf4;
+    background-color: #ffffff;
+    color: #5137e0;
+  }
+}

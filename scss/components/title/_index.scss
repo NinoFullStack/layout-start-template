@@ -1,0 +1,12 @@
+.title {
+  display: grid;
+  align-items: center;
+  grid-template-columns: max-content 1fr;
+  gap: 0 12px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28.8px;
+  letter-spacing: -0.02em;
+  color: #0b0d23;
+}

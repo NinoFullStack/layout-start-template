@@ -1,0 +1,36 @@
+.applications {
+  &-form {
+    .form {
+      &-part {
+        &.form-part--one {
+          padding: 32px 0;
+          border-top: 1px solid #e1ddf4;
+
+          .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px 16px;
+          }
+        }
+
+        &.form-part--two {
+          padding: 32px 0;
+          border-top: 1px solid #e1ddf4;
+
+          .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px 0;
+          }
+        }
+      }
+
+      &-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 16px;
+        align-items: end;
+      }
+    }
+  }
+}

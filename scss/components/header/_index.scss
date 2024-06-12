@@ -1,0 +1,16 @@
+.header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr max-content;
+  padding: 32px 0;
+
+  .title {
+    margin-bottom: 12px;
+  }
+
+  &-btns {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 0 12px;
+  }
+}

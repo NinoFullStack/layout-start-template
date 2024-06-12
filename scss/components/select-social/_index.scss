@@ -1,0 +1,48 @@
+.select-social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  .social {
+    &-label {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+      height: 56px;
+      border: 0.5px solid #e1ddf4;
+      margin-left: -5px;
+      background-color: #fff;
+
+      &--first {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        margin-left: 0;
+      }
+
+      &--last {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+    }
+
+    &-title {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 23.2px;
+      color: #0b0d23;
+      margin-bottom: 8px;
+      grid-column: 1 / 4;
+    }
+
+    &-radio {
+      display: none;
+
+      &:checked + .social-label {
+        border-radius: 8px;
+        border-color: #5137e0;
+        z-index: 10;
+      }
+    }
+  }
+}

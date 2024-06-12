@@ -8,6 +8,159 @@
     <link rel="stylesheet" type="text/css" href="./css/index.min.css" />
   </head>
   <body>
+    <header class="header container">
+      <div class="header-content">
+        <h1 class="title">
+          <img src="./images/edit-document-icon.svg" alt="edit document icon" />
+          Заполнение заявки
+        </h1>
+        <p class="text">
+          Ваш успех начинается с качественной заявки – мы создаем мост к лучшим
+          инфлюэнсерам!
+        </p>
+      </div>
+      <div class="header-btns">
+        <button class="btn">
+          <img src="./images/plus-icon.svg" alt="plus icon" />
+          Опубликовать заказ
+        </button>
+        <button class="btn btn-white">
+          <img src="./images/bookmark-icon.svg" alt="bookmark icon" />
+          Сохранить шаблон
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="applications">
+        <form class="applications-form">
+          <div class="form-part form-part--one">
+            <div class="container">
+              <div class="form-row">
+                <div class="select-social">
+                  <div class="social-title">
+                    Социальная сеть для продвижения:
+                  </div>
+                  <input
+                    class="social-radio"
+                    type="radio"
+                    id="tiktok"
+                    name="social"
+                    checked
+                  />
+                  <label for="tiktok" class="social-label social-label--first">
+                    <img src="./images/tiktok.svg" alt="tiktok" />
+                  </label>
+
+                  <input
+                    class="social-radio"
+                    type="radio"
+                    id="instagram"
+                    name="social"
+                  />
+                  <label for="instagram" class="social-label">
+                    <img src="./images/instagram.svg" alt="instagram" />
+                  </label>
+
+                  <input
+                    class="social-radio"
+                    type="radio"
+                    id="youtube"
+                    name="social"
+                  />
+                  <label for="youtube" class="social-label social-label--last">
+                    <img src="./images/youtube.svg" alt="youtube" />
+                  </label>
+                </div>
+                <label for="applicationsTemplate" class="form-field">
+                  <span class="form-label">Шаблон заявки:</span>
+                  <div class="form-field--select">
+                    <select
+                      name="applicationsTemplate"
+                      id="applicationsTemplate"
+                      class="field-select"
+                    >
+                      <option value="Не использовать">Не использовать</option>
+                      <option value="Использовать">Использовать</option>
+                    </select>
+                  </div>
+                </label>
+              </div>
+              <label for="applicationsName" class="form-field">
+                <span class="form-label">Название заявки:</span>
+                <input
+                  type="text"
+                  id="applicationsName"
+                  class="field-input"
+                  placeholder="Введите сюда текст..."
+                />
+              </label>
+              <label for="aboutTask" class="form-field">
+                <span class="form-label">Описание задачи:</span>
+                <textarea
+                  id="aboutTask"
+                  name="aboutTask"
+                  class="field-textarea"
+                  placeholder="Введите сюда текст..."
+                ></textarea>
+              </label>
+              <label for="aboutProduct" class="form-field">
+                <span class="form-label">О продукте/компании:</span>
+                <div class="form-field--characters">
+                  <textarea
+                    id="aboutProduct"
+                    name="aboutProduct"
+                    class="field-textarea"
+                    placeholder="Введите сюда текст..."
+                  ></textarea>
+
+                  <span class="field-characters">
+                    <img
+                      src="./images/checked-circle.svg"
+                      alt="checked circle"
+                    />
+                    48 / 200 символов
+                  </span>
+                </div>
+              </label>
+              <label for="loadFile" class="form-field form-field--file">
+                <div class="field-load">
+                  <img src="./images/load-file.svg" alt="load file" />
+                  Нажмите или перетащите файлы для работы с проектом сюда
+                </div>
+                <input type="file" id="loadFile" class="field-file" />
+              </label>
+            </div>
+          </div>
+
+          <div class="form-part form-part--two">
+            <div class="container">
+              <label for="subscribers" class="form-field">
+                <span class="form-label">Количество подписчиков:</span>
+                <div class="form-field--select form-field--icon">
+                  <img
+                    class="field-icon"
+                    src="./images/subscribers-icon.svg"
+                    alt="subscribers icon"
+                  />
+                  <select
+                    name="subscribers"
+                    id="subscribers"
+                    class="field-select"
+                  >
+                    <option value="10-100">10-100</option>
+                    <option value="100-500">100-500</option>
+                    <option value="500-1000">500-1000</option>
+                    <option value="1000-1500">1000-1500</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
     <script type="text/javascript" src="./js/app.js"></script>
   </body>
 </html>

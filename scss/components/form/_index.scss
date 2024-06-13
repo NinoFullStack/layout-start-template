@@ -187,6 +187,20 @@
       &-load {
         padding: 15px;
       }
+
+      &-input,
+      &-select,
+      &-textarea {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 14px;
+      }
+
+      &-btns {
+        .btn {
+          padding: 5px 15px;
+        }
+      }
     }
   }
 }

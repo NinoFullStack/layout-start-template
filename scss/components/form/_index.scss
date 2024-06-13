@@ -126,5 +126,17 @@
       line-height: 23.2px;
       color: #5137e0;
     }
+
+    &-btns {
+      display: flex;
+      width: max-content;
+      gap: 0 8px;
+    }
+
+    &-row {
+      gap: 8px;
+      display: grid;
+      grid-template-columns: 1fr max-content;
+    }
   }
 }

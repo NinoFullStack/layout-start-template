@@ -1,0 +1,30 @@
+.personal {
+  .container {
+    padding: 32px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px 0;
+  }
+  .field {
+    &-gap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px 0;
+    }
+
+    &-load {
+      justify-content: start;
+    }
+  }
+
+  .form-row {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 16px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

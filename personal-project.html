@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.min.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header-content">
+        <h1 class="title">
+          <img src="./images/edit-document-icon.svg" alt="edit document icon" />
+          <span>
+            Персональный проект для
+            <span class="title-blue">Khaby Lame</span>
+          </span>
+        </h1>
+        <p class="text">
+          Ваш успех начинается с качественной заявки – мы создаем мост к лучшим
+          инфлюэнсерам!
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="description">
+        <div class="container">
+          <p class="text">
+            После создания персонального проекта вы переместитесь в переписку с
+            выбранным пользователем, где сможете обсудить выполнения проекта и
+            согласовать условия сотрудничества.
+          </p>
+          <p class="text">
+            Если исполнитель откажется от выполнения заказа - вы сможете открыть
+            проект для других исполнителей, что аналогично созданию публичного
+            проекта, но с уже заполненной информацией.
+          </p>
+        </div>
+      </section>
+      <section class="personal">
+        <form class="personal-form">
+          <div class="container">
+            <div class="select-social">
+              <div class="social-title">Социальная сеть для продвижения:</div>
+              <input
+                class="social-radio"
+                type="radio"
+                id="tiktok"
+                name="social"
+                checked
+              />
+              <label for="tiktok" class="social-label social-label--first">
+                <img src="./images/tiktok.svg" alt="tiktok" />
+              </label>
+
+              <input
+                class="social-radio"
+                type="radio"
+                id="instagram"
+                name="social"
+              />
+              <label for="instagram" class="social-label">
+                <img src="./images/instagram.svg" alt="instagram" />
+              </label>
+
+              <input
+                class="social-radio"
+                type="radio"
+                id="youtube"
+                name="social"
+              />
+              <label for="youtube" class="social-label social-label--last">
+                <img src="./images/youtube.svg" alt="youtube" />
+              </label>
+            </div>
+            <label for="nameProject" class="form-field">
+              <span class="form-label">Название проекта:</span>
+              <input
+                type="text"
+                id="nameProject"
+                class="field-input"
+                value="Реклама Instagram-магазина"
+                placeholder="Введите сюда текст..."
+              />
+            </label>
+            <div class="field-gap">
+              <label for="aboutTask" class="form-field">
+                <span class="form-label">Описание задачи:</span>
+                <textarea
+                  id="aboutTask"
+                  name="aboutTask"
+                  class="field-textarea"
+                  placeholder="Введите сюда текст..."
+                ></textarea>
+              </label>
+              <label for="loadFile" class="form-field form-field--file">
+                <div class="field-load">
+                  <img src="./images/load-file.svg" alt="load file" />
+                  Нажмите или перетащите файлы для работы с проектом сюда
+                </div>
+                <input type="file" id="loadFile" class="field-file" />
+                <p class="text">
+                  Допустимые форматы файлов: png, jpeg, gif, tiff, zip, rar до
+                  50 мб
+                </p>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <div class="multiselect" id="user-countries">
+                <span class="multiselect-label">Страны пользователей:</span>
+
+                <div class="multiselect-list" id="multiselect-list">
+                  <button
+                    class="multiselect-item multiselect-item--active"
+                    data-item
+                  >
+                    <img src="./images/ua-flag.svg" alt="ua flag" />
+                    Украина
+                  </button>
+                  <button class="multiselect-item" data-item>
+                    <img src="./images/de-flag.svg" alt="de flag" />
+                    Германия
+                  </button>
+                  <button class="multiselect-item" data-item>
+                    <img src="./images/it-flag.svg" alt="it flag" />
+                    Италия
+                  </button>
+                  <button class="multiselect-item" data-item>
+                    <img src="./images/es-flag.svg" alt="es flag" />
+                    Испания
+                  </button>
+                  <button class="multiselect-item" data-item>
+                    <img src="./images/fr-flag.svg" alt="fr flag" />
+                    Франция
+                  </button>
+                  <button class="multiselect-item" data-item>
+                    <img src="./images/pl-flag.svg" alt="pl flag" />
+                    Польша
+                  </button>
+
+                  <button class="multiselect-add">
+                    <img src="./images/plus-icon-blue.svg" alt="plus icon" />
+                    Добавить
+                  </button>
+                </div>
+              </div>
+
+              <div class="multiselect" id="user-interests">
+                <span class="multiselect-label">Интересы пользователей:</span>
+
+                <div class="multiselect-list" id="multiselect-list">
+                  <button
+                    class="multiselect-item multiselect-item--active"
+                    data-item
+                  >
+                    Технологии
+                  </button>
+                  <button
+                    class="multiselect-item multiselect-item--active"
+                    data-item
+                  >
+                    Игры
+                  </button>
+                  <button class="multiselect-item" data-item>Спорт</button>
+                  <button class="multiselect-item" data-item>Еда</button>
+                  <button class="multiselect-item" data-item>Мода</button>
+                  <button
+                    class="multiselect-item multiselect-item--active"
+                    data-item
+                  >
+                    Финансы
+                  </button>
+                  <button class="multiselect-item" data-item>Искусство</button>
+                  <button class="multiselect-item" data-item>Здоровье</button>
+                  <button class="multiselect-item" data-item>Музыка</button>
+
+                  <button class="multiselect-add">
+                    <img src="./images/plus-icon-blue.svg" alt="plus icon" />
+                    Добавить
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="deadlineCompletion" class="form-field">
+                <span class="form-label">Крайний срок выполнения:</span>
+                <div class="form-field--select form-field--icon">
+                  <img
+                    class="field-icon"
+                    src="./images/calendar-icon.svg"
+                    alt="calendar icon"
+                  />
+                  <select
+                    name="deadlineCompletion"
+                    id="deadlineCompletion"
+                    class="field-select"
+                  >
+                    <option value="26 февраля 2024 (14 дней)">
+                      26 февраля 2024 (14 дней)
+                    </option>
+                    <option value="30 февраля 2024 (17 дней)">
+                      30 февраля 2024 (17 дней)
+                    </option>
+                    <option value="33 февраля 2024 (22 дней)">
+                      33 февраля 2024 (22 дней)
+                    </option>
+                  </select>
+                </div>
+                <div class="field-btns">
+                  <button class="btn btn-white">+1 день</button>
+                  <button class="btn btn-white">+3 день</button>
+                  <button class="btn btn-white">+7 день</button>
+                </div>
+              </label>
+
+              <label for="confirmationPeriod" class="form-field">
+                <span class="form-label">Срок подтверждения Вами:</span>
+                <div class="form-field--select form-field--icon">
+                  <img
+                    class="field-icon"
+                    src="./images/calendar-icon.svg"
+                    alt="calendar icon"
+                  />
+                  <select
+                    name="confirmationPeriod"
+                    id="confirmationPeriod"
+                    class="field-select"
+                  >
+                    <option value="24">В течение 24 часов</option>
+                    <option value="32">В течение 32 часов</option>
+                    <option value="52">В течение 52 часов</option>
+                    <option value="130">В течение 130 часов</option>
+                  </select>
+                </div>
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label for="budget" class="form-field">
+                <span class="form-label">Бюджет:</span>
+                <div class="field-row">
+                  <div class="form-field--icon">
+                    <img
+                      class="field-icon"
+                      src="./images/balance-icon.svg"
+                      alt="balance icon"
+                    />
+                    <input
+                      type="text"
+                      id="budget"
+                      class="field-input"
+                      value="$500.00"
+                    />
+                  </div>
+                  <div class="form-field--select">
+                    <select name="currency" id="currency" class="field-select">
+                      <option value="USD">USD</option>
+                      <option value="EURO">EURO</option>
+                    </select>
+                  </div>
+                  <div class="field-btns">
+                    <button class="btn btn-white">+$5</button>
+                    <button class="btn btn-white">+$10</button>
+                    <button class="btn btn-white">+$25</button>
+                    <button class="btn btn-white">+$50</button>
+                  </div>
+                </div>
+              </label>
+            </div>
+
+            <button class="btn">
+              <img src="./images/plus-icon.svg" alt="plus icon" />
+              Опубликовать персональный проект
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

@@ -28,3 +28,16 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1440px) {
+  .personal {
+    .form-row {
+      grid-template-columns: 1fr;
+      gap: 16px 0;
+    }
+
+    .form-field .field-row {
+      grid-template-columns: 1fr;
+    }
+  }
+}

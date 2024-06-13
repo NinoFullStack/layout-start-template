@@ -19,3 +19,9 @@
     color: #5137e0;
   }
 }
+
+@media (max-width: 520px) {
+  .btn {
+    font-size: 14px;
+  }
+}

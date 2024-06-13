@@ -63,3 +63,59 @@
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .applications {
+    &-form {
+      .form-part {
+        &.form-part--one {
+          .container {
+            grid-template-columns: 1fr;
+          }
+
+          .form-row {
+            grid-template-columns: 1fr;
+            gap: 16px 0;
+          }
+
+          .form-field {
+            grid-column: 1;
+          }
+        }
+
+        &.form-part--two {
+          .form-row {
+            grid-template-columns: 1fr;
+            gap: 16px 0;
+          }
+        }
+
+        &.form-part--three {
+          .container {
+            grid-template-columns: 1fr;
+            gap: 16px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .applications {
+    &-form {
+      .form-part {
+        &.form-part--three {
+          .field-row {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        &.form-part--four {
+          grid-template-columns: 1fr;
+          gap: 12px 0;
+        }
+      }
+    }
+  }
+}

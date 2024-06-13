@@ -33,9 +33,11 @@
       font-weight: 500;
       line-height: 23.2px;
       color: #259a54;
+      background-color: #ffffff;
+      padding: 0 10px;
       position: absolute;
       bottom: 11px;
-      right: 15px;
+      right: 5px;
     }
   }
 
@@ -84,7 +86,7 @@
       background-image: url('../images/checked-icon.svg');
       background-position: center;
       background-size: 70% 60%;
-      
+
       background-repeat: no-repeat;
     }
   }
@@ -175,6 +177,16 @@
 
     &-checkbox {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .form-field {
+    .field {
+      &-load {
+        padding: 15px;
+      }
     }
   }
 }

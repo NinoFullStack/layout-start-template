@@ -46,3 +46,17 @@
     }
   }
 }
+
+@media (max-width: 520px) {
+  .select-social {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    .social {
+      &-label {
+        height: 47px;
+      }
+    }
+  }
+}

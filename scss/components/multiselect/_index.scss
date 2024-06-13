@@ -56,3 +56,24 @@
     grid-template-columns: max-content 1fr;
   }
 }
+
+@media (max-width: 520px) {
+  .multiselect {
+    padding: 15px;
+    grid-template-rows: max-content;
+
+    &-item,
+    &-add {
+      padding: 8px 13px;
+      font-size: 13px;
+
+      img {
+        width: 15px;
+      }
+    }
+
+    &-list {
+      gap: 8px;
+    }
+  }
+}

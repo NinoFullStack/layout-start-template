@@ -2,6 +2,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr max-content;
+  gap: 0 32px;
   padding: 32px 0;
 
   .title {
@@ -12,5 +13,29 @@
     display: grid;
     grid-template-columns: max-content max-content;
     gap: 0 12px;
+  }
+}
+
+@media (max-width: 888px) {
+  .header {
+    grid-template-columns: 1fr;
+    gap: 25px 0;
+
+    &-btns {
+      grid-template-columns: 1fr 1fr;
+
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    &-btns {
+      grid-template-columns: 1fr;
+      gap: 12px 0;
+    }
   }
 }

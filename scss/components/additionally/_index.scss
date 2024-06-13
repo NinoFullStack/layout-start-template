@@ -1,0 +1,9 @@
+.additionally {
+  &-checkboxes {
+    padding: 32px;
+    border-top: 1px solid #e1ddf4;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px 0
+  }
+}
